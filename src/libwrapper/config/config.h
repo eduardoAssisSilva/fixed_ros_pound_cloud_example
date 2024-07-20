@@ -28,7 +28,7 @@ by the turtlesim node at our "robot" (0) to our "cloud" (1)
 And we want to send the velocity commands to control our "robot" (0)
 */
 
-TOPIC(std_msgs::String, "/chatter", 1, "0", 100, 500, 1000);
+TOPIC(geometry_msgs::Twist, "/cmd_vel", 0, "1", 100, 500, 1000);
 
 /*  
 Note that we can verify that the pose is published by turtlesim every 15 ms (or so) 
