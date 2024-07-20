@@ -22,5 +22,5 @@
 
     <!-- relay nodes help with the namespaces associated to pound topics -->
     <!-- A note on relay nodes: it only advertise its output once it receives something on the input -->
-    <node name="topic_tools_vel"    pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/cmd_vel /cmd_vel"/>
+    <node name="topic_tools_vel"    pkg="topic_tools" type="relay" output="screen" args="/R1/rx/R0/cmd_vel /cmd_vel"/>
 </launch>
