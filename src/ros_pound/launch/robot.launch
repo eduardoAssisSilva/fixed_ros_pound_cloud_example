@@ -5,7 +5,7 @@
 
     <node name="ros_pound" pkg="ros_pound" type="commwrapper.py" output="screen" args=" 0" />
 
-  	<node name="topic_tools_vel" pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/admittance_control/vel_raw /test"/>
+  	<node name="topic_tools_vel" pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/admittance_control/vel_raw /admittance_control/vel_raw"/>
 
     <!-- <node name="topic_tools_teste"    pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/chatter /chatter"/> -->
 </launch>
