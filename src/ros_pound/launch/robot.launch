@@ -7,5 +7,5 @@
 
   	<node name="topic_tools_vel" pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/admittance_control/vel_raw /test"/>
 
-    <node name="topic_tools_teste"    pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/chatter /chatter"/>
+    <!-- <node name="topic_tools_teste"    pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/chatter /chatter"/> -->
 </launch>

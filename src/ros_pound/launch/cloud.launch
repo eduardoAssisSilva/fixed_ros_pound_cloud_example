@@ -1,5 +1,5 @@
 <launch>
-    <node name="teleop_key" pkg="rospy_tutorials" type="talker" output="screen" />
+    <!-- <node name="teleop_key" pkg="rospy_tutorials" type="talker" output="screen" /> -->
     
     <node pkg="vwalker_hri" name="Admitance_Controller" type="admittance_controller.py" />
 

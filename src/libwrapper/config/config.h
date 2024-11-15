@@ -39,7 +39,7 @@ TOPIC(nav_msgs::Odometry, "/odom", 0, "1", 100, 500, 1000);
 
 
 // Cloud
-TOPIC(std_msgs::String, "/chatter", 1, "0", 100, 500, 1000);
+// TOPIC(std_msgs::String, "/chatter", 1, "0", 100, 500, 1000);
 TOPIC(geometry_msgs::Twist, "/admittance_control/vel_raw", 1, "0", 100, 500, 1000);
 
 
