@@ -32,11 +32,13 @@ And we want to send the velocity commands to control our "robot" (0)
 
 //Robot
 
-TOPIC(std_msgs::Float32, "/force_filter/force_forward", 1, "0", 100, 500, 1000);
-TOPIC(std_msgs::Float32, "/force_filter/torque", 1, "0", 100, 500, 1000);
+TOPIC(std_msgs::Float32, "/force_filter/force_forward", 0, "1", 100, 500, 1000);
+TOPIC(std_msgs::Float32, "/force_filter/torque", 0, "1", 100, 500, 1000);
 
 // Cloud
-TOPIC(geometry_msgs::Twist, "/admittance_control/vel_raw", 0, "1", 100, 500, 1000);
+TOPIC(std_msgs::String, "/chatter", 1, "0", 100, 500, 1000);
+TOPIC(geometry_msgs::Twist, "/admittance_control/vel_raw", 1, "0", 100, 500, 1000);
+
 
 
 /*  
