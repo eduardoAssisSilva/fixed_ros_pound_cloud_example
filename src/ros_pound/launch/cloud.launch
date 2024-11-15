@@ -8,5 +8,7 @@
   	<node name="topic_tools_force"    pkg="topic_tools" type="relay" output="screen" args="/R1/rx/R0/force_filter/force_forward /force_filter/force_forward"/>
 
     <node name="topic_tools_torque"    pkg="topic_tools" type="relay" output="screen" args="/R1/rx/R0/force_filter/torque /force_filter/torque"/>
+
+    <node name="topic_tools_odom"    pkg="topic_tools" type="relay" output="screen" args="/R1/rx/R0/odom /odom"/>
     
 </launch>

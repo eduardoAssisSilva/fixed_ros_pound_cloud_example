@@ -34,6 +34,9 @@ And we want to send the velocity commands to control our "robot" (0)
 
 TOPIC(std_msgs::Float32, "/force_filter/force_forward", 0, "1", 100, 500, 1000);
 TOPIC(std_msgs::Float32, "/force_filter/torque", 0, "1", 100, 500, 1000);
+TOPIC(nav_msgs::Odometry, "/odom", 0, "1", 100, 500, 1000);
+
+
 
 // Cloud
 TOPIC(std_msgs::String, "/chatter", 1, "0", 100, 500, 1000);
