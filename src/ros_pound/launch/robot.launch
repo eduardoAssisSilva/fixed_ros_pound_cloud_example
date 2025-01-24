@@ -1,11 +1,10 @@
 <launch>
-    	<node name="turtle_node" pkg="rospy_tutorials" type="listener" output="screen" />
-    
+    <node pkg="vwalker_hri" name="Force_Filter" type="force_filter.py" output="screen"  />
     <node pkg="vwalker_hri" name="Superviser" type="superviser.py" />
+    <node pkg="leg_monitoring" name="leg_monitoring" type="leg_laser.py"/>
+    <node pkg="vwalker_hri" name="ScanCorrector" type="scan_physical2virtual.py" />
 
     <node name="ros_pound" pkg="ros_pound" type="commwrapper.py" output="screen" args=" 0" />
 
   	<node name="topic_tools_vel" pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/admittance_control/vel_raw /admittance_control/vel_raw"/>
-
-    <!-- <node name="topic_tools_teste"    pkg="topic_tools" type="relay" output="screen" args="/R0/rx/R1/chatter /chatter"/> -->
 </launch>

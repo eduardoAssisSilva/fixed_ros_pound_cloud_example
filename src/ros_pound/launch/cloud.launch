@@ -1,6 +1,4 @@
-<launch>
-    <!-- <node name="teleop_key" pkg="rospy_tutorials" type="talker" output="screen" /> -->
-    
+<launch>    
     <node pkg="vwalker_hri" name="Admitance_Controller" type="admittance_controller.py" />
 
     <node name="ros_pound" pkg="ros_pound" type="commwrapper.py" output="screen" args=" 1" />
